@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: url(./img/fondo.jpg) no-repeat center/cover;
+    background: url(/Cards-Poker/img/fondo.jpg) no-repeat center/cover;
     display: flex;
     background-color: greenyellow;
     justify-content: center;
