@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background: url(./img/fondo.jpg) no-repeat center/cover;
+    display: flex;
+    background-color: greenyellow;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-flow: row wrap;
+}
+
+h1 {
+    background-color: rgba(231, 0, 0, 0.753);
+    width: 100%;
+    text-align: center;
+    padding: 3%;
+    font-size: 5cqh;
+}
+
+.contenedor {
+    width: 55%;
+    min-width: 550px;
+    aspect-ratio: 5.3/4;
+    background-color: rgba(245, 245, 245, 0.233);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3%;
+    padding: 3%;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    width: 25%;
+    height: 48%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.637);
+    font-weight: 600;
+    /* align-items: center;       Para centrar medio sin position, es una opción
+    justify-content: center; */
+    font-size: 2.5cqh;
+    /* Aquí utilizamos container query units para que crezca la letra
+    según el tamaño de su contenedor, el problema es que no se admite
+    en todos los navegadores */
+}
+
+.izquierda {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    /* background-color: brown; */
+
+}
+
+.medio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Mueve al elemento respecto a sí mismo */
+    /* background-color: lightgreen; */
+    font-size: 5.5cqh;
+    /* Aquí utilizamos container query units */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.derecha {
+    bottom: 3%;
+    right: 3%;
+    position: absolute;
+    /* background-color: blueviolet; */
+
+}
+
+.reverso {
+    transform: rotate(-180deg);
+}
+
+.roja {
+    color: rgb(190, 2, 2);
+}
+
+.diego {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3cqh;
+    background:url("data:image/svg+xml,\<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'>\<polygon points='10,0 20,10 10,20 0,10' fill='red'/>\</svg>");
+    background-color: black;
+    background-repeat: repeat;
+    background-size: 20px 20px;
+    color: white;
+}
+
+.diego .izquierda {
+    box-sizing: border-box;
+    background-color: black;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 2%;
+    color: grey;
+}
+
+.diego .derecha {
+    background-color: black;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 2%;
+    box-sizing: border-box;
+    color: grey;
+}
+
+span {
+    color: gold;
+}
